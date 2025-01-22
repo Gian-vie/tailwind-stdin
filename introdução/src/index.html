@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind stdin</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+<body class="items-center">
+    <h1 class="text-3xl font-bold underline text-red-700">
+        Hello world!
+      </h1>
+
+      <p class="bg-green-700 text-red-700 hover:bg-red-700 hover:text-green-700" >Tudo sao classes</p>
+      <button class="btn-blue">botão</button>
+      <button class="btn-green">botão</button>
+      <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">botão</button>
+      <div class="w-4 md:w-6 lg:w-10 h-4 md:h-6 lg:h-10 bg-green-400 md:bg-blue-400 lg:bg-red-400"></div>
+      <div>
+        <input type="text" placeholder="clica em mim" class="bg-gray-300 text-gray-900 focus:bg-red-600 focus:text-red-400">
+      </div>
+      <!-- COntainers -->
+       <div class="container bg-red-400 mx-auto p-4 m-4 border-red-600 border-2">
+        <p>o texto do container</p>
+       </div>
+       <div class="container bg-green-700 md:bg-blue-700 p-4 mx-auto">
+        <p>container q troca cor</p>
+       </div>
+       <diV class="container bg-purple-400 m-4 border-box p-10">
+        <P>BORDER BOX</P>
+        <!-- se limita ao tamanho maximo especificado -->
+       </diV>
+       <div class="container bg-teal-400 m-4 box-content p-10">
+        <p>BOX CONTENT</p>
+        <!-- soma as bordas e paddins ao tamanho indicado passando do tamanho maximo-->
+       </div>
+       <!-- DISPLAY -->
+        <div class="container">
+            <span class="block bg-red-300 my-2">Não é originalmente um elemento de bloco</span>
+            <span class="block bg-red-300 my-2">Não é originalmente um elemento de bloco</span>
+            <div class="inline-block bg-blue-300 m-2">era um block</div>
+            <div class="inline-block bg-blue-300 m-2">era um block</div>
+            <div class="hidden">essa div vai sumir</div>
+        </div>
+        <div class="container bg-gray-700">
+            <div class="bg-green-500 inline-block m-2">verde</div>
+            <div class="bg-yellow-500 inline-block m-2">amarelo</div>
+            <div class="bg-red-500 inline-block m-2">vermelho</div>
+        </div>
+
+        <div class="bg-gray-500 float-right">float right</div>
+        <div class="bg-gray-500 float-left">float left</div>
+        <div class="clear-both"></div>
+        <div class="bg-gray-700 float-left text-white">float left</div>
+        <div class="bg-gray-700 float-right text-white">float right</div>
+
+        <div class="overflow-hidden h-16 m-6 bg-purple-300">
+            <p>testando overflow HIDDEN</p>
+            <p>testando overflow</p>
+            <p>testando overflow</p>
+            <p>testando overflow</p>
+            <p>testando overflow</p>
+            <p>testando overflow</p>
+            <p>testando overflow</p>
+        </div>
+        
+        <div class="overflow-auto h-16 m-6 bg-purple-300">
+            <p>testando overflow AUTO</p>
+            <p>testando overflow</p>
+            <p>testando overflow</p>
+            <p>testando overflow</p>
+            <p>testando overflow</p>
+            <p>testando overflow</p>
+            <p>testando overflow</p>
+        </div>
+
+        <div class="overflow-y-auto h-16 m-6 bg-purple-300">
+            <p>testando overflow Y AUTO</p>
+            <p>testando overflow</p>
+            <p>testando overflow</p>
+            <p>testando overflow</p>
+            <p>testando overflow</p>
+            <p>testando overflow</p>
+            <p>testando overflow</p>
+        </div>
+
+        <div class="overflow-x-auto h-16 w-100 m-6 bg-purple-300">
+            <p>testando overflow xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+        </div>
+
+
+        <!-- POSITIONS -->
+        <div class="relative bg-pink-500 p-10">
+            teste
+            <!-- a div absolut se posiciona relativamente a div pai -->
+            <div class="absolute top-0 right-0 bg-pink-700">absolute</div>
+        </div>
+        
+        <div class="relative bg-blue-500 p-10">
+            RELATIVE
+            <!-- a div absolut se posiciona relativamente a div pai -->
+            <div class="absolute bottom-0 right-0 bg-blue-700">absolute</div>
+        </div>
+
+
+        <!-- Z index -->
+         <!-- z-10, z-20, z-30 -->
+        <div class="container relative ">
+            <div class="bg-red-500 h-20 w-20 p-6 absolute z-10">Na frente</div>
+            <div class="bg-red-900 h-20 w-20 p-6 absolute m-10">A ATRAS</div>
+            <div class="clear-both"></div>
+        </div>
+        <br>
+        <hr>
+        <br>
+    </body>
+</html>
